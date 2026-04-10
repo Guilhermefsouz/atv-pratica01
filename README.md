@@ -1,50 +1,25 @@
-# Welcome to your Expo app 👋
+# atv-pratica01 — Programação para Dispositivos Móveis
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Descrição
+Aplicativo de controle de despesas em React Native com Expo, desenvolvido seguindo as instruções das Aulas 07 (Navegação) e 08 (Itens de Interface e Funções).
 
-## Get started
+## Estrutura do Projeto
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+atv-pratica01/
+├── App.js                          # Configuração da navegação principal
+├── screens/
+│   ├── DespesasRecentes.js         # Tela: despesas dos últimos 7 dias
+│   ├── TodasDespesas.js            # Tela: todas as despesas
+│   └── GerenciarDespesa.js         # Tela: adicionar/editar despesa
+├── components/
+│   ├── IconButton.js               # Botão com ícone Ionicons
+│   └── despesa/
+│       ├── DespesaItem.js          # Item individual da lista
+│       ├── DespesaLista.js         # FlatList de despesas
+│       ├── DespesaSaida.js         # Agrupa Sumário + Lista
+│       └── DespesaSumario.js       # Exibe período e soma total
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
